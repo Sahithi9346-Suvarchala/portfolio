@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahithi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 15px 0;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #0d6efd;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #0d6efd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Sahithi Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Vattivella Sahithi Suvarchala</h2>
+    <p>B.Tech CSE Student</p>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I am a curious and enthusiastic student who enjoys learning new technologies 
+      and applying them to solve real-life problems. I like building clean and 
+      practical web-based solutions and exploring innovative ideas. With a positive 
+      mindset and willingness to learn, I am always looking for opportunities 
+      to improve my skills and gain experience.
+    </p>
+  </section>
+
+  <section id="education" class="container">
+    <h2>Education</h2>
+
+    <div class="card">
+      <h3>The Apollo University</h3>
+      <p>B.Tech in Computer Science Engineering</p>
+      <p>2024 - Present</p>
+    </div>
+
+    <div class="card">
+      <h3>Bhashyam Junior College</h3>
+      <p>Intermediate Education</p>
+      <p>2022 - 2024 | 91%</p>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>FastAPI</span>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Agri Support Web Application</h3>
+      <p>
+        Developed a web platform for farmers affected by floods.
+        Implemented image upload and basic damage analysis using 
+        HTML, CSS, and JavaScript.
+      </p>
+
+      <a href="https://sahithi9346-suvarchala.github.io/agri/" target="_blank">
+        View Project
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Flood Damage Detection System</h3>
+      <p>
+        Created a system to identify flood damage from images 
+        and help in faster claim verification.
+      </p>
+    </div>
+  </section>
+
+  <section id="certifications" class="container">
+    <h2>Certifications</h2>
+
+    <div class="card">
+      <p>✔ Full Stack Development - 30 Days Course</p>
+      <p>✔ IoT Certification - Basics of Sensors & Smart Systems</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+
+    <p>Email: vattivella07@gmail.com</p>
+    <p>Phone: 9346709390</p>
+    <p>GitHub: Sahithi9346-Suvarchala</p>
+    <p>LinkedIn: sahithi-suvarchala-vattivella-b613aa340</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Sahithi Portfolio | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
